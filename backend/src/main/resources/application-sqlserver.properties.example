@@ -1,0 +1,17 @@
+# ── Copia este archivo como application-sqlserver.properties ──────────
+# ── y reemplaza los valores con los tuyos ─────────────────────────────
+
+# Conexión a SQL Server
+spring.datasource.url=jdbc:sqlserver://TU_SERVIDOR;databaseName=dataquery_db;encrypt=false;trustServerCertificate=true
+spring.datasource.username=TU_USUARIO
+spring.datasource.password=TU_PASSWORD
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.SQLServer2012Dialect
+spring.jpa.show-sql=false
+
+# JWT — usa una cadena larga y aleatoria en producción
+app.jwt.secret=TU_JWT_SECRET_LARGO_Y_SEGURO
+app.jwt.expiration=86400000
