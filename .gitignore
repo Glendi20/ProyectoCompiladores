@@ -1,0 +1,25 @@
+# ── Credenciales y configuración sensible ────────────────────────────
+backend/src/main/resources/application-sqlserver.properties
+backend/src/main/resources/application-h2.properties
+.env
+.env.local
+.env.production
+
+# ── Build del backend ─────────────────────────────────────────────────
+backend/target/
+
+# ── Dependencias del frontend ─────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+
+# ── IDE y sistema ─────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+*.log
+
+*.exe
+*.bin
+*.sql
