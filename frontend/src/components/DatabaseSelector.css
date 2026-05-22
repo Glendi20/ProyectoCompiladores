@@ -1,0 +1,25 @@
+.database-selector h3   { font-size: 0.82rem; font-weight: 600; color: #a0aec0; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+.selector-hint          { font-size: 0.75rem; color: #4a5568; margin-bottom: 10px; line-height: 1.4; }
+.db-list                { display: flex; flex-direction: column; gap: 6px; }
+
+.db-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #1a202c;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #cbd5e0;
+  font-size: 0.9rem;
+  transition: all 0.15s;
+  text-align: left;
+  width: 100%;
+}
+.db-btn:hover  { background: #2d3748; border-color: #4a5568; }
+.db-btn.active { background: #1a365d; border-color: #63b3ed; color: #fff; }
+
+.db-icon  { font-size: 1.2rem; }
+.db-name  { flex: 1; font-weight: 500; }
+.db-check { color: #63b3ed; font-weight: 700; }

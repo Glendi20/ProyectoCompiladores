@@ -1,0 +1,76 @@
+.sql-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #0f0f1a;
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #2a2a3e;
+}
+
+.editor-header h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.editor-hint { font-size: 0.78rem; color: #475569; }
+
+.editor-hint kbd {
+  background: #2a2a3e;
+  color: #94a3b8;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  border: 1px solid #3a3a4e;
+}
+
+.example-btn {
+  background: transparent;
+  border: 1px solid #2a2a3e;
+  color: #64748b;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.example-btn:hover { border-color: #6366f1; color: #818cf8; }
+
+.monaco-wrapper {
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.compile-btn {
+  margin: 12px 16px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  flex-shrink: 0;
+}
+
+.compile-btn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+.compile-btn:disabled, .compile-btn.loading { opacity: 0.6; cursor: not-allowed; }

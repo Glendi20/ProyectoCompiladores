@@ -1,0 +1,40 @@
+.editor-page {
+  display: grid;
+  grid-template-columns: 260px 1fr 380px;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+  background: #0f0f1a;
+}
+
+.left-panel {
+  border-right: 1px solid #2a2a3e;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.center-panel > :last-child {
+  flex: 1;
+  min-height: 0;
+}
+
+.right-panel {
+  border-left: 1px solid #2a2a3e;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+@media (max-width: 1100px) {
+  .editor-page {
+    grid-template-columns: 220px 1fr 320px;
+  }
+}
